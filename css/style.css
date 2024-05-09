@@ -15,7 +15,7 @@
     --brand-color: #00bfa6;
     --linear-back: Linear-gradient(180deg,
             rgba(34, 193, 195, 1) 0%,
-            rgba(0, 191, 92, 1) 100%);
+            rgb(214, 167, 48) 100%);
 }
 
 a {
@@ -256,20 +256,16 @@ li .profile_title {
 }
 
 /* Resume Page */
-.resume_page .resume_container {
-    margin: 1.2rem 0;
-    display: flex;
+.resume_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
-.left_resume {
-    width: 100%;
-    padding: 0.6rem;
-    border-right: 0.2rem solid var(--brand-color);
-}
-
-.right_resume {
-    width: 100%;
-    padding: 0.6rem;
+.resume_table td {
+    padding: 20px;
+    vertical-align: top;
+    border: 1px solid #ccc;
 }
 
 .resume_title {
@@ -284,30 +280,31 @@ li .profile_title {
 }
 
 .resume_box {
-    margin: 1.5rem 0;
+    margin-bottom: 1.5rem;
 }
 
-.resume_box .resume_date {
+.resume_date {
     font-size: 1rem;
-    border: 0.1rem solid var(--brand-color);
+    border: 1px solid var(--brand-color);
     padding: 0.1rem 0.2rem;
     color: var(--brand-color);
 }
 
-.resume_box .resume_box_title {
+.resume_box_title {
     margin-top: 0.5rem;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.resume_box .resume_company {
+.resume_company {
     font-size: 1rem;
 }
 
-.resume_box .resume_text {
+.resume_text {
     font-size: 1rem;
     font-weight: 300;
 }
+
 
 /* Skills Container */
 
